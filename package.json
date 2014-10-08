@@ -1,0 +1,28 @@
+{
+  "name": "arroyo",
+  "version": "1.0.0",
+  "description": "GitHub event streams",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js",
+    "lint": "eslint index.js",
+    "dryrun": "(TARBALL=`npm pack` ; tar ztvf $TARBALL ; rm -f $TARBALL)"
+  },
+  "keywords": [
+    "github",
+    "event",
+    "api",
+    "stream"
+  ],
+  "author": "Erik Toth <totherik@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "parse-link-header": "^0.2.0",
+    "through2": "^0.6.2",
+    "wreck": "^5.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^0.8.2",
+    "tape": "^3.0.0"
+  }
+}
